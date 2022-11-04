@@ -29,10 +29,10 @@ if (isset($_POST['submit'])) {
             header("location: ../signup.php?error=pwdmismatch");
             exit();
         }
-        if (uidExists($pdo, $username) !== false) {
+       /* if (uidExists($pdo, $username, $email) !== false) {
             header("location: ../signup.php?error=usernameused");
             exit();
-        }
+        }*/
 
         createUser($pdo, $name, $email, $username, $pwd);
 
