@@ -71,11 +71,6 @@ function createUser($pdo, $name, $email, $username, $pwd) {
     $uId = $statement->fetchAll(PDO::FETCH_ASSOC);
 }*/
 //??? mORE CODE HERE?? TIME STAMP 1h16
-//Password hashing with mySql ???? - don't need it for wild supplies.
-
-
- /////////////////////////////////////////////
- //Signup and Login with PHP and MySQL - https://www.youtube.com/watch?v=5L9UhOnuos0 helped with this video too
 
 
  /////////////////LOGIN//////////////////////////
@@ -115,3 +110,5 @@ else if ($checkPwd === true){
     exit();
 }
 }
+
+
